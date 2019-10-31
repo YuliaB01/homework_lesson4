@@ -15,10 +15,10 @@ export const ReviewsPage = () => {
                 <h4>Leave your review</h4>
                 <ReviewInput onAdd={onAdd} ref={textInput}/>
             </div>
-            <div className="reviewsContent">
+            {reviews.length ? <div className="reviewsContent">
                 <h4 className="reviewsHeader">Reviews List:</h4>
                 <ReviewsList {...{reviews}}/>
-            </div>
+            </div> : null}
         </div>
     );
 };
