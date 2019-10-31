@@ -1,0 +1,150 @@
+* {
+  box-sizing: border-box;
+}
+
+html,
+body,
+#root {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+
+#root {
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+}
+
+.centered {
+  height: calc(100% - 85px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  font-size: 45px;
+}
+
+.navList {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  list-style: none;
+  width: 50%;
+  height: 45px;
+  margin: 20px auto;
+  padding: 0;
+  border-bottom: 1px solid #9a5d5d;
+}
+
+.navItem {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  transition: background-color linear .2s;
+}
+
+.navItem:hover {
+  background-color: rgba(0,0,0, .05);
+}
+
+.navItem a {
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #383636;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  padding: 0 15px;
+}
+
+.isActive {
+  border-bottom-color: #3273dc!important;
+  color: #3273dc!important;
+}
+
+.modal-content .content-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.modal-content .content-wrapper button {
+  margin-top: 20px;
+}
+
+.modal-content .content-wrapper span {
+  padding: 10px;
+  font-size: 20px;
+  color: #6b6969;
+  font-weight: 300;
+}
+
+.shopBtn {
+  margin-top: 30px;
+}
+
+.header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.header h4 {
+  font-size: 16px;
+  margin-bottom: 10px;
+  color: #6b6767;
+}
+
+form {
+  display: flex;
+  justify-content: center;
+  width: 50%;
+}
+
+.reviewsContent {
+  margin-top: 20px;
+}
+
+.reviewsHeader {
+  font-size: 22px;
+  color: #053573;
+}
+
+.reviewItem {
+  font-size: 20px;
+  padding: 5px;
+}
+
+.reviewItem span {
+  font-size: 14px;
+}
+
+.reviewsList {
+  padding-left: 20px;
+}
+
+.reviewText {
+  margin-top: 30px;
+}
+
+.reviewLink {
+  color: #464748;
+  font-size: 16px;
+}
+
+.reviewLink:hover {
+  text-decoration: underline;
+}
