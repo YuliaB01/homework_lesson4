@@ -9,16 +9,15 @@ import {NavBar} from '../components/NavBar';
 export const Router = () => {
     return (
         <BrowserRouter>
+            <NavBar/>
             <Switch>
                 <Route path={ROUTES.REVIEWS}>
                     <ReviewsRouter/>
                 </Route>
                 <Route exact path={ROUTES.HOME}>
-                    <NavBar/>
                     <HomePage/>
                 </Route>
                 <Route exact path={ROUTES.SHOP}>
-                    <NavBar/>
                     <ShopPage/>
                 </Route>
             </Switch>

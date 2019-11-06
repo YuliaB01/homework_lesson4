@@ -10,7 +10,7 @@ export const ReviewsList = ({reviews}) => {
             {reviews && reviews.map((review, i) =>
                 <li className="reviewItem" key={review.id}>
                     <span>{i + 1}. </span>
-                    <Link to={`${pathname}/${review.id}`} className="reviewLink">
+                    <Link to={`${pathname}/review/${review.id}`} className="reviewLink">
                         {review.text}
                     </Link>
                 </li>

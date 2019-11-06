@@ -1,9 +1,11 @@
 import React from 'react';
-import {NavLink} from 'react-router-dom';
+import {NavLink, useRouteMatch} from 'react-router-dom';
 import {ROUTES} from '../router/routes';
 
 export const NavBar = () => {
-    return (
+    const route = useRouteMatch(`${ROUTES.REVIEWS}/review`);
+
+    return route && route.url ? null : (
         <div className="tabs is-centered">
             <ul>
                 <li><NavLink exact to={ROUTES.HOME} activeClassName='isActive'>Home page</NavLink></li>
